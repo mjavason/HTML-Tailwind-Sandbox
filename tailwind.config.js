@@ -1,0 +1,1 @@
+// important to activate the vscode tailwind extension
