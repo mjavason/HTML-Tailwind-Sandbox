@@ -15,8 +15,8 @@ A simple, fast sandbox for building and testing HTML components. Hot reload on f
    cd your-repo
    ```
 2. Open the `index.html` file in VS Code.
-3. Install the **Live Preview** extension by Microsoft from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server).
-4. Click the **Go Live** button in VS Code to start previewing your changes instantly.
+3. Install the **Live Preview** extension by Microsoft from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) to view changes right in your IDE.
+4. Click the preview button at the top right of the editor, enjoy!
 
 ## 📂 Project Structure
 ```
