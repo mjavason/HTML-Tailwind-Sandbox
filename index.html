@@ -3,14 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS in HTML</title>
+    <title>Tailwind CSS Responsive Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="tailwind-3.4.16.js"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-4">
-        <h1 class="text-xl font-bold text-gray-900">Hello, Tailwind!</h1>
-        <p class="text-gray-600">This is a simple example of using Tailwind CSS with plain HTML.</p>
-    </div>
-</body>
+  <body
+    class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen"
+  >
+    <nav class="p-4 text-white bg-purple-900">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <!-- Desktop Menu -->
+        <ul class="order-4 md:order-1 hidden md:flex gap-4">
+          <li class="hover:text-gray-500 cursor-pointer">
+            Products <i class="fas fa-chevron-down"></i>
+          </li>
+          <li class="hover:text-gray-500 cursor-pointer">Pricing</li>
+          <li class="hover:text-gray-500 cursor-pointer">Community</li>
+        </ul>
+
+        <!-- Logo -->
+        <p class="order-2 w-[45vw] md:w-auto md:order-1 text-lg font-bold">Startup</p>
+
+        <!-- Buttons -->
+        <div class="order-3 md:flex gap-4">
+          <button class="text-white hover:text-gray-900">Login</button>
+          <button
+            class="px-6 py-1 text-white rounded-full shadow-md border border-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
+          >
+            Sign Up
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button (Triggers Checkbox) -->
+        <label
+          for="menu-toggle"
+          class="order-4 flex md:hidden text-white text-lg font-bold cursor-pointer"
+        >
+          ☰
+        </label>
+      </div>
+   <!-- Hidden Checkbox (Toggle for Menu) -->
+   <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+          <!-- Mobile Menu (Appears only on Mobile) -->
+          <div
+          class="bg-black fixed top-0 left-0 h-screen w-[40%] -translate-x-full opacity-0 transition-all duration-300 ease-in-out peer-checked:translate-x-0 peer-checked:opacity-100 bg-primary-500 flex flex-col items-center justify-center space-y-6 shadow-lg"
+        >
+          <ul class="flex flex-col items-center gap-4 text-lg">
+            <li class="hover:text-gray-300 cursor-pointer">
+              Products <i class="fas fa-chevron-down"></i>
+            </li>
+            <li class="hover:text-gray-300 cursor-pointer">Pricing</li>
+            <li class="hover:text-gray-300 cursor-pointer">Community</li>
+          </ul>
+        </div>
+        
+        
+        </div>
+    </nav>
+  </body>
 </html>
