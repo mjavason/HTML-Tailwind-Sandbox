@@ -1,0 +1,8 @@
+{
+       "printWidth": 800,
+       "useTabs": false,
+       "tabWidth": 2,
+       "semi": true,
+       "singleQuote": false,
+       "htmlWhitespaceSensitivity": "ignore"
+}
