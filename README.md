@@ -44,5 +44,3 @@ A simple, fast sandbox for building and testing HTML components. Hot reload on f
 ---
 
 Happy coding! 🚀
-
-ps: Ignore the `workshop` folder. It contains my component/work files and is not part of the main project setup.
